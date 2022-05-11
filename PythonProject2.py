@@ -4,7 +4,7 @@
 
 rentalPricePerDay = 35.00
 pricePerKM = .10
-HST = 0.15
+HSTRate = 0.15
 
 customerName = input("Enter Customer Name: ")
 phoneNumber = input("Enter Phone Number: ")
@@ -16,7 +16,7 @@ travelledKM = afterMileage - beforeMileage
 rentalCost = daysRented * rentalPricePerDay
 mileageCost = travelledKM * pricePerKM
 rentalMileageCost = rentalCost + mileageCost
-HSTOnRentalCost = rentalCost * HST
+HSTOnRentalCost = rentalCost * HSTRate
 totalCost = rentalMileageCost + HSTOnRentalCost
 
 print()
